@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CÂU LẠC BỘ CẦU LÔNG</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5}
+header{
+background:url("https://png.pngtree.com/thumb_back/fw800/background/20251130/pngtree-modern-indoor-badminton-court-background-with-shuttlecock-motion-blur-image_20521048.webp") no-repeat center;
+background-size:cover;padding:50px;color:white}
+h1{color:red;font-size:42px;text-align:center;text-shadow:2px 2px 5px black}
+nav{background:#c62828;text-align:center}
+nav a{display:inline-block;padding:15px 20px;color:white;text-decoration:none;font-weight:bold}
+nav a:hover{background:#ffcccb;color:black}
+.login{float:right}
+.slide{width:50%;margin:auto}
+.slide img{width:100%;height:300px}
+section{display:none;padding:20px;background:white;margin:20px;border-radius:10px}
+section img{width:30%;margin:10px}
+table{width:100%;border-collapse:collapse;text-align:center}
+table,th,td{border:1px solid black}
+th{background:#ffcdd2}
+footer{background:#c62828;color:white;text-align:center;padding:15px}
+#loginBox{display:none;background:white;width:320px;margin:20px auto;padding:20px;border:1px solid gray}
+input{width:95%;padding:5px}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="login">
+<span id="userInfo"></span>
+<button onclick="moDangNhap()">Đăng nhập / Đăng ký</button>
+<button onclick="dangXuat()">Đăng xuất</button>
+</div>
+<h1>CÂU LẠC BỘ CẦU LÔNG</h1>
+</header>
+
+<nav>
+<a onclick="hien('home')">Trang chủ</a>
+<a onclick="hien('lich')">Lịch hoạt động</a>
+<a onclick="hien('giai')">Giải thi đấu</a>
+<a onclick="hien('tv')">Thành viên</a>
+<a onclick="hien('choi')">Cách chơi</a>
+</nav>
+
+<div class="slide">
+<img id="anh" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGPaAtqvHfi221OiZOEo6jHBOaWjPveK2n4w&s">
+</div>
+
+<section id="home" style="display:block">
+<h2>Giới thiệu Câu lạc bộ Cầu lông</h2>
+<p>1.<b> Giới thiệu về môn cầu lông </b>
+
+Cầu lông là một môn thể thao phổ biến, phù hợp với nhiều lứa tuổi và được yêu thích rộng rãi trên toàn thế giới. Môn thể thao này không chỉ giúp rèn luyện sức khỏe, tăng cường thể lực mà còn nâng cao sự nhanh nhẹn, phản xạ và khả năng phối hợp giữa tay và mắt. Cầu lông có thể chơi trong nhà hoặc ngoài trời, với hình thức đánh đơn hoặc đánh đôi, tạo nên sự linh hoạt và hấp dẫn. Nhờ tính giải trí cao và lợi ích sức khỏe rõ rệt, cầu lông ngày càng được nhiều người lựa chọn để luyện tập hằng ngày.
+.</p>
+<p><b>2. Mục đích thành lập Câu lạc bộ Cầu lông </b>Câu lạc bộ Cầu lông được thành lập nhằm tạo ra một sân chơi lành mạnh cho những người yêu thích bộ môn cầu lông, đặc biệt là học sinh, sinh viên. CLB giúp các thành viên có cơ hội rèn luyện thể chất, giải tỏa căng thẳng sau giờ học tập và làm việc. Bên cạnh đó, CLB còn là nơi giao lưu, học hỏi, chia sẻ kinh nghiệm và nâng cao kỹ năng thi đấu. Thông qua các buổi tập luyện và hoạt động chung, CLB góp phần xây dựng tinh thần đoàn kết, năng động và tích cực trong cộng đồng..</p>
+<p><b>3. Ý nghĩa của Câu lạc bộ Cầu lông</b>
+
+Câu lạc bộ Cầu lông mang nhiều ý nghĩa thiết thực đối với cá nhân và tập thể. Đối với mỗi thành viên, CLB giúp hình thành thói quen rèn luyện thể thao, nâng cao sức khỏe và ý thức kỷ luật. Đối với tập thể, CLB góp phần xây dựng môi trường sinh hoạt lành mạnh, thúc đẩy phong trào thể dục thể thao phát triển. Ngoài ra, CLB còn giúp phát hiện và bồi dưỡng những cá nhân có năng khiếu, tạo tiền đề tham gia các giải đấu phong trào và nâng cao thành tích thể thao của nhà trường hoặc địa phương.</p>
+</section>
+
+<section id="lich">
+<h2>Lịch hoạt động</h2>
+<table>
+<tr><th>Buổi</th><th>T2</th><th>T3</th><th>T4</th><th>T5</th><th>T6</th><th>T7</th><th>CN</th></tr>
+<tr><th>Sáng</th><td></td><td></td><td></td><td></td><td></td><td>Tập</td><td>Tập</td></tr>
+<tr><th>Chiều</th><td>Tập</td><td>Tập</td><td>Tập</td><td>Tập</td><td>Tập</td><td></td><td></td></tr>
+</table>
+</section>
+
+<section id="giai">
+<h2>Giải thi đấu</h2>
+<p>Câu lạc bộ thường xuyên tổ chức các giải đấu nội bộ nhằm tạo cơ hội cho các thành viên cọ xát và nâng cao trình độ. Các giải đấu được chia theo hình thức đánh đơn nam, đơn nữ và đánh đôi. Thể lệ thi đấu tuân theo luật cầu lông hiện hành, đảm bảo tính công bằng và minh bạch. Mỗi trận đấu được tính điểm rõ ràng, có trọng tài giám sát.</p>
+
+<p>Về nội quy, các thành viên cần tham gia đúng giờ, mặc trang phục thể thao phù hợp và tuân thủ tinh thần fair-play. Mọi hành vi gian lận, thiếu tôn trọng đối thủ hoặc gây mất trật tự đều sẽ bị nhắc nhở hoặc xử lý theo quy định của CLB.</p>
+</section>
+
+<section id="tv">
+<h2>Danh sách thành viên</h2>
+<table id="bangTV">
+<tr><th>STT</th><th>Tên</th><th>Lớp</th><th>SĐT</th></tr>
+</table>
+
+<h3>Đăng ký tham gia CLB</h3>
+<form onsubmit="guiDangKy();return false">
+<input id="ten"><br><br>
+<input id="lop"><br><br>
+<input id="sdt"><br><br>
+<button>Gửi đăng ký</button>
+</form>
+
+<h3>Duyệt thành viên (Admin)</h3>
+<ul id="choDuyet"></ul>
+</section>
+
+<section id="choi">
+    <h2>Cách chơi</h2><p>Cầu lông là môn thể thao đòi hỏi sự nhanh nhẹn, khéo léo và phối hợp linh hoạt giữa tay và chân. Trước khi chơi, người tham gia cần khởi động kỹ để tránh chấn thương. Trận đấu bắt đầu bằng động tác giao cầu đúng luật, cầu phải được đánh từ dưới thắt lưng sang phần sân đối phương. Trong quá trình thi đấu, người chơi cần di chuyển hợp lý, quan sát hướng cầu và sử dụng các kỹ thuật cơ bản như đánh cao, đánh ngang, đập cầu và bỏ nhỏ. Bên cạnh tấn công, phòng thủ cũng rất quan trọng nhằm giữ vững thế trận và tránh mất điểm. Đối với đánh đôi, sự phối hợp nhịp nhàng với đồng đội sẽ quyết định hiệu quả thi đấu. Kết thúc trận đấu, người chơi cần giữ tinh thần thể thao, tôn trọng đối thủ và trọng tài.</p>
+
+    <p><b>Các hình ảnh minh họa động tác:</b></p>
+
+    <div class="images">
+        <img src="https://static.fbshop.vn/wp-content/media-old/uploads/2023/07/danh-cau-sat-luoi.jpg">
+        <img src="https://thethaonamviet.vn/wp-content/uploads/2025/04/choi-cau-long-5.jpg">
+        <img src="https://babolat.com.vn/wp-content/uploads/2023/11/ky-thuat-danh-cau-long-co-ban.jpg">
+    </div>
+</section>
+
+
+<footer>
+<p>
+Liên kết:
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXfESrphj_fWrxTqM2EZoFmQic_RfOtkDqw&s"
+     width="40" height="40">
+
+<a href="https://thethao247.vn/" target="_blank" style="color:yellow;">
+https://thethao247.vn/
+</a>
+</p>
+<p>Hotline: 999999</p>
+</footer>
+
+<div id="loginBox">
+<h3>Đăng nhập</h3>
+<input id="user"><br><br>
+<input type="password" id="pass"><br><br>
+<button onclick="dangNhap()">Đăng nhập</button>
+<button onclick="dangKy()">Đăng ký</button>
+<button onclick="dongDangNhap()">Đóng</button>
+</div>
+
+<script>
+const adminUser="hruasokiu", adminPass="123456";
+
+function hien(id){
+document.querySelectorAll("section").forEach(s=>s.style.display="none");
+document.getElementById(id).style.display="block";
+}
+
+let imgs=["https://thethaodonga.com/wp-content/uploads/2022/06/hinh-anh-cau-long-dep-8.png",
+"https://thethaodonga.com/wp-content/uploads/2022/06/hinh-anh-cau-long-dep-9.png"];
+let i=0;
+setInterval(()=>{anh.src=imgs[i++%imgs.length]},3000);
+
+function moDangNhap(){loginBox.style.display="block"}
+function dongDangNhap(){loginBox.style.display="none"}
+
+function dangKy(){
+let users=JSON.parse(localStorage.getItem("users"))||{};
+users[user.value]=pass.value;
+localStorage.setItem("users",JSON.stringify(users));
+alert("Đăng ký thành công");
+}
+
+function dangNhap(){
+let users=JSON.parse(localStorage.getItem("users"))||{};
+if(user.value===adminUser&&pass.value===adminPass){
+localStorage.setItem("login","admin");
+}else if(users[user.value]===pass.value){
+localStorage.setItem("login",user.value);
+}else{alert("Sai");return}
+hienThongTin();dongDangNhap();
+}
+
+function hienThongTin(){
+let u=localStorage.getItem("login");if(u) userInfo.innerHTML="Xin chào: "+u;
+taiCho();taiThanhVien();
+}
+function dangXuat(){localStorage.removeItem("login");location.reload()}
+
+function guiDangKy(){
+let cho=JSON.parse(localStorage.getItem("cho"))||[];
+cho.push({ten:ten.value,lop:lop.value,sdt:sdt.value});
+localStorage.setItem("cho",JSON.stringify(cho));
+alert("Đã gửi");
+}
+
+function taiCho(){
+if(localStorage.getItem("login")!=="admin") return;
+let cho=JSON.parse(localStorage.getItem("cho"))||[];
+choDuyet.innerHTML="";
+cho.forEach((t,i)=>{
+choDuyet.innerHTML+=`<li>${t.ten} <button onclick="duyet(${i})">Duyệt</button></li>`;
+});
+}
+
+function duyet(i){
+let cho=JSON.parse(localStorage.getItem("cho"));
+let tv=JSON.parse(localStorage.getItem("tv"))||[];
+tv.push(cho[i]);
+cho.splice(i,1);
+localStorage.setItem("cho",JSON.stringify(cho));
+localStorage.setItem("tv",JSON.stringify(tv));
+taiCho();taiThanhVien();
+}
+
+function taiThanhVien(){
+let tv=JSON.parse(localStorage.getItem("tv"))||[];
+let b=bangTV; b.innerHTML="<tr><th>STT</th><th>Tên</th><th>Lớp</th><th>SĐT</th></tr>";
+tv.forEach((t,i)=>{
+b.innerHTML+=`<tr><td>${i+1}</td><td>${t.ten}</td><td>${t.lop}</td><td>${t.sdt}</td></tr>`;
+});
+}
+hienThongTin();
+</script>
+
+</body>
+  </html>
